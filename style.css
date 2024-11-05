@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     overflow: hidden; /* Prevents vertical scroll */
+    overflow-x: hidden;
 }
 
 header {
@@ -27,7 +28,7 @@ header {
     display: flex;
     align-items: center;
     height: 100vh;
-    padding-top: 80px; /* Offset for header */
+    padding-top: 100px; /* Offset for header */
     overflow: hidden;
     cursor: grab;
 }
