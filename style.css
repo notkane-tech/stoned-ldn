@@ -50,10 +50,55 @@ header {
     .gallery {
         padding-top: 80px; /* Adjust top padding for visibility on mobile */
     }
-    
+
     .portrait {
         width: 200px; /* Smaller width for mobile */
         height: 70vh; /* Reduce height slightly on mobile */
         margin: 0 10px; /* Closer spacing for a more zoomed-out effect */
     }
 }
+
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FCF6F5FF; 
+    font-weight: 600;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d1d1d1;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FCF6F5FF;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
