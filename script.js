@@ -50,12 +50,3 @@ gallery.addEventListener('touchmove', (e) => {
     applyParallaxEffect();
 });
 
-function applyParallaxEffect() {
-    const scrollPosition = gallery.scrollLeft;
-    images.forEach((image, index) => {
-        const depth = 0.02 * (index + 1);
-        const scale = 1 + scrollPosition * depth * 0.0001;
-        const limitedScale = Math.min(1.1, Math.max(1, scale));
-        image.style.transform = `scale(${limitedScale})`;
-    });
-}
