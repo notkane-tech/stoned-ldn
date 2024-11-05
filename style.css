@@ -46,14 +46,14 @@ header {
     transform: scale(1.01); /* Zoom on hover */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .gallery {
-        padding-top: 120px; /* Adjust top padding for visibility on mobile */
+        padding-top: 80px; /* Adjust top padding for visibility on mobile */
     }
     
     .portrait {
         width: 200px; /* Smaller width for mobile */
         height: 70vh; /* Reduce height slightly on mobile */
-        margin: 0 5px; /* Closer spacing for a more zoomed-out effect */
+        margin: 0 10px; /* Closer spacing for a more zoomed-out effect */
     }
 }
