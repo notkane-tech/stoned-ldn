@@ -45,3 +45,15 @@ header {
 .portrait:hover {
     transform: scale(1.01); /* Zoom on hover */
 }
+
+@media (max-width: 768px) {
+    .gallery {
+        padding-top: 120px; /* Adjust top padding for visibility on mobile */
+    }
+    
+    .portrait {
+        width: 200px; /* Smaller width for mobile */
+        height: 70vh; /* Reduce height slightly on mobile */
+        margin: 0 5px; /* Closer spacing for a more zoomed-out effect */
+    }
+}
