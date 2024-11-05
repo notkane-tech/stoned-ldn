@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevents vertical scroll */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+}
+
+.logo {
+    max-width: 50px; /* Adjust size as needed */
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px; /* Offset for header */
+    overflow: hidden;
+    cursor: grab;
+}
+
+.portrait {
+    width: 50vh;
+    height: 80vh; /* Keeps images a consistent height */
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+
+.portrait:hover {
+    transform: scale(1.01); /* Zoom on hover */
+}
